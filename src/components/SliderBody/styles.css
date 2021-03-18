@@ -50,7 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  border-radius: var(--imageBorderRadius);
+  border-radius: 8px;
   max-width: 170px
 }
 
@@ -78,6 +78,7 @@
   width: 100%;
   word-wrap: normal;
   overflow-wrap: break-word;
+  margin-top: 15px;
 }
 .itemContent p {
   font-size: 1em;
@@ -96,4 +97,32 @@
 
 .high {
   border: 3px solid #22d07a;
+}
+
+.itemRateContainer {
+  position: absolute;
+  top: -19px;
+  left: 10px;
+  display: flex;
+  margin: 0 !important;
+}
+
+.itemRate {
+  background-color: #042541;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.thumbIcon {
+  margin: 6px 3px !important;
+  color: white;
+}
+
+.disable {
+  visibility: hidden;
+}
+
+.active svg{
+  color: cyan;
 }

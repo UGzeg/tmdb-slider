@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_KEY = "7d6507ce330b14d2b2d52131a5a535d9";
+export const API_KEY = "Buraya API KEY'inizi girin";
 export const URL = "https://api.themoviedb.org/3";
 
 export const requests = {

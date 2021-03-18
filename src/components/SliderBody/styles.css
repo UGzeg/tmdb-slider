@@ -79,3 +79,21 @@
   word-wrap: normal;
   overflow-wrap: break-word;
 }
+.itemContent p {
+  font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.6);
+}
+
+.low {
+  border: 3px solid #db2360;
+}
+
+.mid {
+  border: 3px solid #d1d532;
+}
+
+.high {
+  border: 3px solid #22d07a;
+}

@@ -40,7 +40,7 @@ const options = {
 };
 
 const Tabs = ({ tabType, fetchType }) => {
-  const [fetch, setFetch] = useState("fetchTrending");
+  const [fetch, setFetch] = useState(tabType === "popular" ? "fetchTrending" : "fetchMovie");
 
   useEffect(() => {
     setFetchType(fetch);

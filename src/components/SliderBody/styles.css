@@ -1,0 +1,81 @@
+.itemContainer {
+  min-height: 0;
+  height: auto;
+  width: 100%;
+  max-width: 1300px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: height 0.5s linear;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
+}
+
+.itemImgContainer :first-of-type {
+  margin-left: 40px;
+}
+
+.itemImgContainer {
+  width: 170px;
+  min-width: 170px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-top: 0;
+  overflow: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-radius: var(--imageBorderRadius);
+  max-width: 170px
+}
+
+
+.itemImg {
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    min-height: calc(150px * 1.5);
+    height: calc(150px * 1.5);
+    background: #dbdbdb;
+    overflow: hidden;
+}
+
+.itemContent {
+  width: 100%;
+    position: relative;
+    white-space: normal;
+    display: inline-block;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.itemContent h2 {
+  font-size: 1em;
+  margin: 0;
+  width: 100%;
+  word-wrap: normal;
+  overflow-wrap: break-word;
+}

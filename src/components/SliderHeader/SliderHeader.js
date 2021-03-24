@@ -10,17 +10,18 @@ const SliderHeader = ({ title, tabType, movies }) => {
   const [fetchURL, setFetchURL] = useState()
 
   useEffect(() => {
-    async function fetchData(){
-
-      const request = await axios.get(requests[fetchURL]);
-      movies(request.data.results);
-      return;
-    }
-    fetchData();
+    fetchURL !== undefined && fetchData(fetchURL);
   }, [fetchURL]) 
 
   const tabChange = (child) => {
     setFetchURL(child)
+  }
+
+  async function fetchData(item){
+    const tempURL = requests[item]
+    const request = await axios.get(tempURL);
+    movies(request.data.results);
+    return;
   }
 
   return (

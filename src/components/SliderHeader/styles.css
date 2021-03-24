@@ -1,11 +1,8 @@
-.sliderHeaderContainer {
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
+.sliderHeaderContainer { 
+  display: block;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin-left: 40px;
 }
 
 .sliderHeaderTitle {
@@ -20,6 +17,7 @@
   align-content: center;
   border: 1px solid rgba(3, 37, 65, 1);
   border-radius: 30px;
+  max-width: max-content;
 }
 
 .sliderHeaderTabItem {
@@ -53,3 +51,11 @@
   text-decoration: none !important;
 }
 
+@media only screen and (min-width:768px){
+  .sliderHeaderContainer{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+  }
+}
